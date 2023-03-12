@@ -4,42 +4,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      input:checked + div {
+        border: black;
+      }
+
+      input:checked + div svg {
+        display: block;
+      }
+    </style>
   </head>
 
   <body
-    class="bg-[#131731] flex justify-center items-center space-x-16 min-h-screen"
+    class="bg-[#131731] flex justify-center items-start space-x-16 min-h-screen mt-36"
   >
     <div
       class="bg-[#1B2042] text-[#B5B8CF] p-8 space-y-8 shadow-lg rounded-xl max-w-md md:max-w-lg"
     >
       <div class="space-y-2">
         <p class="text-lg font-serif font-bold">Build your page</p>
-        <p class="text-md">
+        <p class="text-sm">
           Complete actions to unlock new features along the way.
           <br />
           On average completed pages get 30% more traffic.
         </p>
       </div>
       <div class="space-y-2">
-        <div class="flex">
-          <div
-            class="rounded-full w-10 h-2 bg-black mr-2 hover:bg-violet-700"
-          ></div>
-          <div class="rounded-full w-10 h-2 bg-black mr-2"></div>
-          <div class="rounded-full w-10 h-2 bg-black mr-2"></div>
-          <div class="rounded-full w-10 h-2 bg-black mr-2"></div>
-          <div class="rounded-full w-10 h-2 bg-black mr-2"></div>
-          <div class="rounded-full w-10 h-2 bg-black mr-2"></div>
-          <div class="rounded-full w-10 h-2 bg-black mr-2"></div>
-          <div class="rounded-full w-10 h-2 bg-black mr-2"></div>
-          <div class="rounded-full w-10 h-2 bg-black mr-2"></div>
+        <div class="progress-bar flex justify-between">
+          <div class="rounded-full w-12 h-2 bg-[#11162C] mr-2"></div>
+          <div class="rounded-full w-12 h-2 bg-[#11162C] mr-2"></div>
+          <div class="rounded-full w-12 h-2 bg-[#11162C] mr-2"></div>
+          <div class="rounded-full w-12 h-2 bg-[#11162C] mr-2"></div>
+          <div class="rounded-full w-12 h-2 bg-[#11162C] mr-2"></div>
+          <div class="rounded-full w-12 h-2 bg-[#11162C] mr-2"></div>
+          <div class="rounded-full w-12 h-2 bg-[#11162C] mr-2"></div>
         </div>
-        <p class="text-sm">3 remaining to complete</p>
+        <p class="steps-left text-xs">3 remaining to complete</p>
       </div>
     </div>
 
     <div
-      class="bg-[#4AA2F7] text-[#B5B8CF] p-8 mt-36 space-y-8 shadow-lg rounded-xl w-40 h-48 max-w-md md:max-w-lg"
+      class="bg-[#4AA2F7] text-[#B5B8CF] p-8 mt-24 space-y-8 shadow-lg rounded-xl w-40 h-48 max-w-md md:max-w-lg"
     >
       <div
         class="bg-[#1B2042] text-[#B5B8CF] p-6 space-y-4 shadow-lg rounded-xl w-40 max-w-md md:max-w-lg"
@@ -47,35 +53,247 @@
         <p class="font-serif font-bold text-sm">Checklist</p>
         <div class="flex flex-col space-y-4">
           <div class="flex flex-row items-center">
-            <div class="rounded-full w-4 h-4 border border-gray-200"></div>
-            <span class="pl-2 text-xs"> Industry</span>
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                id="A3-yes"
+                name="A3-confirmation"
+                value="yes"
+                class="cursor-pointer opacity-0 absolute h-4 w-4"
+              />
+              <div
+                class="border-2 border-blue-400 w-4 h-4 flex flex-shrink-0 justify-center items-center focus-within:border-blue-500 rounded-full"
+              >
+                <svg
+                  class="fill-current hidden w-3 h-3 text-blue-600 pointer-events-none"
+                  version="1.1"
+                  viewBox="0 0 17 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g fill="none" fill-rule="evenodd">
+                    <g
+                      transform="translate(-9 -11)"
+                      fill="#1F73F1"
+                      fill-rule="nonzero"
+                    >
+                      <path
+                        d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <p class="pl-2 text-xs">Industry</p>
           </div>
           <div class="flex flex-row items-center">
-            <div class="rounded-full w-4 h-4 border border-gray-200"></div>
-            <span class="pl-2 text-xs"> Website URL</span>
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                id="A3-yes"
+                name="A3-confirmation"
+                value="yes"
+                class="cursor-pointer opacity-0 absolute h-4 w-4"
+              />
+              <div
+                class="border-2 border-blue-400 w-4 h-4 flex flex-shrink-0 justify-center items-center focus-within:border-blue-500 rounded-full"
+              >
+                <svg
+                  class="fill-current hidden w-3 h-3 text-blue-600 pointer-events-none"
+                  version="1.1"
+                  viewBox="0 0 17 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g fill="none" fill-rule="evenodd">
+                    <g
+                      transform="translate(-9 -11)"
+                      fill="#1F73F1"
+                      fill-rule="nonzero"
+                    >
+                      <path
+                        d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <p class="pl-2 text-xs">Website URL</p>
+          </div>
+
+          <div class="flex flex-row items-center">
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                id="A3-yes"
+                name="A3-confirmation"
+                value="yes"
+                class="cursor-pointer opacity-0 absolute h-4 w-4"
+              />
+              <div
+                class="border-2 border-blue-400 w-4 h-4 flex flex-shrink-0 justify-center items-center focus-within:border-blue-500 rounded-full"
+              >
+                <svg
+                  class="fill-current hidden w-3 h-3 text-blue-600 pointer-events-none"
+                  version="1.1"
+                  viewBox="0 0 17 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g fill="none" fill-rule="evenodd">
+                    <g
+                      transform="translate(-9 -11)"
+                      fill="#1F73F1"
+                      fill-rule="nonzero"
+                    >
+                      <path
+                        d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <p class="pl-2 text-xs">Company size</p>
           </div>
           <div class="flex flex-row items-center">
-            <div class="rounded-full w-4 h-4 border border-gray-200"></div>
-            <span class="pl-2 text-xs"> Company size</span>
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                id="A3-yes"
+                name="A3-confirmation"
+                value="yes"
+                class="cursor-pointer opacity-0 absolute h-4 w-4"
+              />
+              <div
+                class="border-2 border-blue-400 w-4 h-4 flex flex-shrink-0 justify-center items-center focus-within:border-blue-500 rounded-full"
+              >
+                <svg
+                  class="fill-current hidden w-3 h-3 text-blue-600 pointer-events-none"
+                  version="1.1"
+                  viewBox="0 0 17 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g fill="none" fill-rule="evenodd">
+                    <g
+                      transform="translate(-9 -11)"
+                      fill="#1F73F1"
+                      fill-rule="nonzero"
+                    >
+                      <path
+                        d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <p class="pl-2 text-xs">Description</p>
           </div>
           <div class="flex flex-row items-center">
-            <div class="rounded-full w-4 h-4 border border-gray-200"></div>
-            <span class="pl-2 text-xs"> Description</span>
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                id="A3-yes"
+                name="A3-confirmation"
+                value="yes"
+                class="cursor-pointer opacity-0 absolute h-4 w-4"
+              />
+              <div
+                class="border-2 border-blue-400 w-4 h-4 flex flex-shrink-0 justify-center items-center focus-within:border-blue-500 rounded-full"
+              >
+                <svg
+                  class="fill-current hidden w-3 h-3 text-blue-600 pointer-events-none"
+                  version="1.1"
+                  viewBox="0 0 17 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g fill="none" fill-rule="evenodd">
+                    <g
+                      transform="translate(-9 -11)"
+                      fill="#1F73F1"
+                      fill-rule="nonzero"
+                    >
+                      <path
+                        d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <p class="pl-2 text-xs">Logo</p>
           </div>
           <div class="flex flex-row items-center">
-            <div class="rounded-full w-4 h-4 border border-gray-200"></div>
-            <span class="pl-2 text-xs"> Logo</span>
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                id="A3-yes"
+                name="A3-confirmation"
+                value="yes"
+                class="cursor-pointer opacity-0 absolute h-4 w-4"
+              />
+              <div
+                class="border-2 border-blue-400 w-4 h-4 flex flex-shrink-0 justify-center items-center focus-within:border-blue-500 rounded-full"
+              >
+                <svg
+                  class="fill-current hidden w-3 h-3 text-blue-600 pointer-events-none"
+                  version="1.1"
+                  viewBox="0 0 17 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g fill="none" fill-rule="evenodd">
+                    <g
+                      transform="translate(-9 -11)"
+                      fill="#1F73F1"
+                      fill-rule="nonzero"
+                    >
+                      <path
+                        d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <p class="pl-2 text-xs">Location</p>
           </div>
           <div class="flex flex-row items-center">
-            <div class="rounded-full w-4 h-4 border border-gray-200"></div>
-            <span class="pl-2 text-xs"> Location</span>
-          </div>
-          <div class="flex flex-row items-center">
-            <div class="rounded-full w-4 h-4 border border-gray-200"></div>
-            <span class="pl-2 text-xs"> Custom button</span>
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                id="A3-yes"
+                name="A3-confirmation"
+                value="yes"
+                class="cursor-pointer opacity-0 absolute h-4 w-4"
+              />
+              <div
+                class="border-2 border-blue-400 w-4 h-4 flex flex-shrink-0 justify-center items-center focus-within:border-blue-500 rounded-full"
+              >
+                <svg
+                  class="fill-current hidden w-3 h-3 text-blue-600 pointer-events-none"
+                  version="1.1"
+                  viewBox="0 0 17 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g fill="none" fill-rule="evenodd">
+                    <g
+                      transform="translate(-9 -11)"
+                      fill="#1F73F1"
+                      fill-rule="nonzero"
+                    >
+                      <path
+                        d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <p class="pl-2 text-xs">Custom button</p>
           </div>
         </div>
       </div>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
