@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style>
+      button:focus path {
+        fill: #1d1948;
+      }
+
+      .signout:hover path {
+        fill: #ee4e39;
+      }
+    </style>
+  </head>
+
+  <body class="p-20 bg-[#E8E9FD]">
+    <!-- <div
+      class="m-12 p-8 h-fill w-1/2 md:w-40 md:bg-[#EE4E39] md:rounded-xl z-0"
+    > -->
+
+    <div class="md:flex justify-center w-full">
+      <div
+        class="bg-[#F8F9FE] p-8 rounded-t-xl md:rounded-l-xl md:rounded-tr-none md:shadow-xl lg:w-fit"
+      >
+        <div class="flex justify-between">
+          <div class="flex items-center mt-4 w-fit">
+            <img
+              src="	https://github.com/mbspcruz/dailyChallenge/blob/main/challenge6/assets/face1.jpg?raw=true"
+              class="w-14 h-14 rounded-2xl object-cover shrink-0"
+            />
+            <div class="flex-col ml-2 w-48">
+              <h4 class="text-[#1D1948] font-bold md:text-lg">Ildiko Gaspar</h4>
+              <p class="text-gray-500 font-light text-xs md:text-md">
+                @igaspar
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center hamburguer">
+            <button class="md:hidden">
+              <svg
+                class="open-menu w-fit shrink-0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#6b6692"
+                  d="M3 4h18v2H3V4zm6 7h12v2H9v-2zm-6 7h18v2H3v-2z"
+                />
+              </svg>
+            </button>
+            <button>
+              <svg
+                class="close-menu w-fit shrink-0 hidden"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="#6b6692"
+                  d="m289.94 256l95-95A24 24 0 0 0 351 127l-95 95l-95-95a24 24 0 0 0-34 34l95 95l-95 95a24 24 0 1 0 34 34l95-95l95 95a24 24 0 0 0 34-34Z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="hidden md:flex md:flex-col">
+          <div class="flex mt-20">
+            <button
+              class="flex w-full text-[#6b6692] -mx-4 p-4 pl-8 hover:border-l-4 focus:border-l-4 focus:border-[#EE4E39] focus:text-[#1D1948] focus:font-bold hover:bg-gray-100 transition-all ease-in delay-100"
+            >
+              <svg
+                class="mr-2 shrink-0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  fill="#6b6692"
+                  d="M208 32H48a16 16 0 0 0-16 16v160a16 16 0 0 0 16 16h160a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16Zm0 176H48V48h160v160ZM160 88H96a8 8 0 0 0-8 8v64a8 8 0 0 0 8 8h64a8 8 0 0 0 8-8V96a8 8 0 0 0-8-8Zm-8 64h-48v-48h48Z"
+                />
+              </svg>
+              General
+            </button>
+          </div>
+          <div class="flex">
+            <button
+              class="flex items-center w-full text-[#6b6692] -mx-4 p-4 pl-8 hover:border-l-4 focus:border-l-4 focus:border-[#EE4E39] focus:text-[#1D1948] focus:font-bold hover:bg-gray-100 transition-all ease-in delay-100"
+            >
+              <svg
+                class="mr-2 shrink-0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#6b6692"
+                  d="M12 17a2 2 0 0 1-2-2c0-1.11.89-2 2-2a2 2 0 0 1 2 2a2 2 0 0 1-2 2m6 3V10H6v10h12m0-12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10c0-1.11.89-2 2-2h1V6a5 5 0 0 1 5-5a5 5 0 0 1 5 5v2h1m-6-5a3 3 0 0 0-3 3v2h6V6a3 3 0 0 0-3-3Z"
+                />
+              </svg>
+              Password
+            </button>
+          </div>
+          <div class="flex">
+            <button
+              class="flex items-center w-full text-[#6b6692] -mx-4 p-4 pl-8 hover:border-l-4 focus:border-l-4 focus:border-[#EE4E39] focus:text-[#1D1948] focus:font-bold hover:bg-gray-100 transition-all ease-in delay-100"
+            >
+              <svg
+                class="mr-2 shrink-0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#6b6692"
+                  d="M4 20q-.825 0-1.412-.587Q2 18.825 2 18V6q0-.825.588-1.412Q3.175 4 4 4h16q.825 0 1.413.588Q22 5.175 22 6v12q0 .825-.587 1.413Q20.825 20 20 20ZM20 8l-7.475 4.675q-.125.075-.263.112q-.137.038-.262.038t-.262-.038q-.138-.037-.263-.112L4 8v10h16Zm-8 3l8-5H4ZM4 8v.25v-1.475v.025V6v.8v-.013V8.25V8v10Z"
+                />
+              </svg>
+              Invitations
+            </button>
+          </div>
+          <div class="flex">
+            <button
+              class="billing focus:outline-0 focus:border-l-4 flex items-center w-full text-[#6b6692] -mx-4 p-4 pl-8 hover:border-l-4 focus:border-[#EE4E39] focus:text-[#1D1948] focus:font-bold hover:bg-gray-100 transition-all ease-in delay-100"
+            >
+              <svg
+                class="mr-2 shrink-0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#6b6692"
+                  d="M22 17H2a1 1 0 0 0 0 2h20a1 1 0 0 0 0-2Zm0 4H2a1 1 0 0 0 0 2h20a1 1 0 0 0 0-2ZM6 7a1 1 0 1 0 1 1a1 1 0 0 0-1-1Zm14-6H4a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3Zm1 11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1Zm-9-7a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm6-2a1 1 0 1 0 1 1a1 1 0 0 0-1-1Z"
+                />
+              </svg>
+              Billing
+            </button>
+          </div>
+          <div class="flex">
+            <button
+              class="flex items-center w-full text-[#6b6692] -mx-4 p-4 pl-8 hover:border-l-4 focus:border-l-4 focus:border-[#EE4E39] focus:text-[#1D1948] focus:font-bold hover:bg-gray-100 transition-all ease-in delay-100"
+            >
+              <svg
+                class="mr-2 shrink-0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#6b6692"
+                  d="M6 20q-.825 0-1.412-.587Q4 18.825 4 18q0-.825.588-1.413Q5.175 16 6 16t1.412.587Q8 17.175 8 18q0 .825-.588 1.413Q6.825 20 6 20Zm6 0q-.825 0-1.412-.587Q10 18.825 10 18q0-.825.588-1.413Q11.175 16 12 16t1.413.587Q14 17.175 14 18q0 .825-.587 1.413Q12.825 20 12 20Zm6 0q-.825 0-1.413-.587Q16 18.825 16 18q0-.825.587-1.413Q17.175 16 18 16q.825 0 1.413.587Q20 17.175 20 18q0 .825-.587 1.413Q18.825 20 18 20ZM6 14q-.825 0-1.412-.588Q4 12.825 4 12t.588-1.413Q5.175 10 6 10t1.412.587Q8 11.175 8 12q0 .825-.588 1.412Q6.825 14 6 14Zm6 0q-.825 0-1.412-.588Q10 12.825 10 12t.588-1.413Q11.175 10 12 10t1.413.587Q14 11.175 14 12q0 .825-.587 1.412Q12.825 14 12 14Zm6 0q-.825 0-1.413-.588Q16 12.825 16 12t.587-1.413Q17.175 10 18 10q.825 0 1.413.587Q20 11.175 20 12q0 .825-.587 1.412Q18.825 14 18 14ZM6 8q-.825 0-1.412-.588Q4 6.825 4 6t.588-1.412Q5.175 4 6 4t1.412.588Q8 5.175 8 6t-.588 1.412Q6.825 8 6 8Zm6 0q-.825 0-1.412-.588Q10 6.825 10 6t.588-1.412Q11.175 4 12 4t1.413.588Q14 5.175 14 6t-.587 1.412Q12.825 8 12 8Zm6 0q-.825 0-1.413-.588Q16 6.825 16 6t.587-1.412Q17.175 4 18 4q.825 0 1.413.588Q20 5.175 20 6t-.587 1.412Q18.825 8 18 8Z"
+                />
+              </svg>
+              Apps
+            </button>
+          </div>
+          <div class="flex flex-end mt-24">
+            <button
+              class="signout flex items-center w-full text-[#6b6692] -mx-4 p-4 pl-8 hover:font-bold transition-all"
+            >
+              <svg
+                class="mr-2 shrink-0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#6b6692"
+                  d="M15.325 16.275q-.275-.325-.275-.738q0-.412.275-.687l1.85-1.85H10q-.425 0-.712-.288Q9 12.425 9 12t.288-.713Q9.575 11 10 11h7.175l-1.85-1.85q-.3-.3-.3-.712q0-.413.3-.713q.275-.3.688-.3q.412 0 .687.275l3.6 3.6q.15.15.213.325q.062.175.062.375t-.062.375q-.063.175-.213.325l-3.6 3.6q-.325.325-.712.287q-.388-.037-.663-.312ZM5 21q-.825 0-1.413-.587Q3 19.825 3 19V5q0-.825.587-1.413Q4.175 3 5 3h6q.425 0 .713.287Q12 3.575 12 4t-.287.712Q11.425 5 11 5H5v14h6q.425 0 .713.288q.287.287.287.712t-.287.712Q11.425 21 11 21Z"
+                />
+              </svg>
+              Logout
+            </button>
+          </div>
+        </div>
+
+        <!-- Hamburguer Menu -->
+
+        <div class="hamburger-menu hidden">
+          <div class="flex mt-20">
+            <button
+              class="flex w-full text-[#6b6692] -mx-4 p-4 pl-8 hover:border-l-4 focus:border-l-4 focus:border-[#EE4E39] focus:text-[#1D1948] focus:font-bold hover:bg-gray-100 transition-all ease-in delay-100"
+            >
+              <svg
+                class="mr-2 shrink-0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  fill="#6b6692"
+                  d="M208 32H48a16 16 0 0 0-16 16v160a16 16 0 0 0 16 16h160a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16Zm0 176H48V48h160v160ZM160 88H96a8 8 0 0 0-8 8v64a8 8 0 0 0 8 8h64a8 8 0 0 0 8-8V96a8 8 0 0 0-8-8Zm-8 64h-48v-48h48Z"
+                />
+              </svg>
+              General
+            </button>
+          </div>
+          <div class="flex">
+            <button
+              class="flex items-center w-full text-[#6b6692] -mx-4 p-4 pl-8 hover:border-l-4 focus:border-l-4 focus:border-[#EE4E39] focus:text-[#1D1948] focus:font-bold hover:bg-gray-100 transition-all ease-in delay-100"
+            >
+              <svg
+                class="mr-2 shrink-0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#6b6692"
+                  d="M12 17a2 2 0 0 1-2-2c0-1.11.89-2 2-2a2 2 0 0 1 2 2a2 2 0 0 1-2 2m6 3V10H6v10h12m0-12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10c0-1.11.89-2 2-2h1V6a5 5 0 0 1 5-5a5 5 0 0 1 5 5v2h1m-6-5a3 3 0 0 0-3 3v2h6V6a3 3 0 0 0-3-3Z"
+                />
+              </svg>
+              Password
+            </button>
+          </div>
+          <div class="flex">
+            <button
+              class="flex items-center w-full text-[#6b6692] -mx-4 p-4 pl-8 hover:border-l-4 focus:border-l-4 focus:border-[#EE4E39] focus:text-[#1D1948] focus:font-bold hover:bg-gray-100 transition-all ease-in delay-100"
+            >
+              <svg
+                class="mr-2 shrink-0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#6b6692"
+                  d="M4 20q-.825 0-1.412-.587Q2 18.825 2 18V6q0-.825.588-1.412Q3.175 4 4 4h16q.825 0 1.413.588Q22 5.175 22 6v12q0 .825-.587 1.413Q20.825 20 20 20ZM20 8l-7.475 4.675q-.125.075-.263.112q-.137.038-.262.038t-.262-.038q-.138-.037-.263-.112L4 8v10h16Zm-8 3l8-5H4ZM4 8v.25v-1.475v.025V6v.8v-.013V8.25V8v10Z"
+                />
+              </svg>
+              Invitations
+            </button>
+          </div>
+          <div class="flex">
+            <button
+              class="billing focus:outline-0 focus:border-l-4 flex items-center w-full text-[#6b6692] -mx-4 p-4 pl-8 hover:border-l-4 focus:border-[#EE4E39] focus:text-[#1D1948] focus:font-bold hover:bg-gray-100 transition-all ease-in delay-100"
+            >
+              <svg
+                class="mr-2 shrink-0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#6b6692"
+                  d="M22 17H2a1 1 0 0 0 0 2h20a1 1 0 0 0 0-2Zm0 4H2a1 1 0 0 0 0 2h20a1 1 0 0 0 0-2ZM6 7a1 1 0 1 0 1 1a1 1 0 0 0-1-1Zm14-6H4a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3Zm1 11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1Zm-9-7a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm6-2a1 1 0 1 0 1 1a1 1 0 0 0-1-1Z"
+                />
+              </svg>
+              Billing
+            </button>
+          </div>
+          <div class="flex">
+            <button
+              class="flex items-center w-full text-[#6b6692] -mx-4 p-4 pl-8 hover:border-l-4 focus:border-l-4 focus:border-[#EE4E39] focus:text-[#1D1948] focus:font-bold hover:bg-gray-100 transition-all ease-in delay-100"
+            >
+              <svg
+                class="mr-2 shrink-0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#6b6692"
+                  d="M6 20q-.825 0-1.412-.587Q4 18.825 4 18q0-.825.588-1.413Q5.175 16 6 16t1.412.587Q8 17.175 8 18q0 .825-.588 1.413Q6.825 20 6 20Zm6 0q-.825 0-1.412-.587Q10 18.825 10 18q0-.825.588-1.413Q11.175 16 12 16t1.413.587Q14 17.175 14 18q0 .825-.587 1.413Q12.825 20 12 20Zm6 0q-.825 0-1.413-.587Q16 18.825 16 18q0-.825.587-1.413Q17.175 16 18 16q.825 0 1.413.587Q20 17.175 20 18q0 .825-.587 1.413Q18.825 20 18 20ZM6 14q-.825 0-1.412-.588Q4 12.825 4 12t.588-1.413Q5.175 10 6 10t1.412.587Q8 11.175 8 12q0 .825-.588 1.412Q6.825 14 6 14Zm6 0q-.825 0-1.412-.588Q10 12.825 10 12t.588-1.413Q11.175 10 12 10t1.413.587Q14 11.175 14 12q0 .825-.587 1.412Q12.825 14 12 14Zm6 0q-.825 0-1.413-.588Q16 12.825 16 12t.587-1.413Q17.175 10 18 10q.825 0 1.413.587Q20 11.175 20 12q0 .825-.587 1.412Q18.825 14 18 14ZM6 8q-.825 0-1.412-.588Q4 6.825 4 6t.588-1.412Q5.175 4 6 4t1.412.588Q8 5.175 8 6t-.588 1.412Q6.825 8 6 8Zm6 0q-.825 0-1.412-.588Q10 6.825 10 6t.588-1.412Q11.175 4 12 4t1.413.588Q14 5.175 14 6t-.587 1.412Q12.825 8 12 8Zm6 0q-.825 0-1.413-.588Q16 6.825 16 6t.587-1.412Q17.175 4 18 4q.825 0 1.413.588Q20 5.175 20 6t-.587 1.412Q18.825 8 18 8Z"
+                />
+              </svg>
+              Apps
+            </button>
+          </div>
+          <div class="flex mt-12">
+            <button
+              class="signout flex items-center w-full text-[#6b6692] -mx-4 p-4 pl-8 hover:font-bold transition-all"
+            >
+              <svg
+                class="mr-2 shrink-0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#6b6692"
+                  d="M15.325 16.275q-.275-.325-.275-.738q0-.412.275-.687l1.85-1.85H10q-.425 0-.712-.288Q9 12.425 9 12t.288-.713Q9.575 11 10 11h7.175l-1.85-1.85q-.3-.3-.3-.712q0-.413.3-.713q.275-.3.688-.3q.412 0 .687.275l3.6 3.6q.15.15.213.325q.062.175.062.375t-.062.375q-.063.175-.213.325l-3.6 3.6q-.325.325-.712.287q-.388-.037-.663-.312ZM5 21q-.825 0-1.413-.587Q3 19.825 3 19V5q0-.825.587-1.413Q4.175 3 5 3h6q.425 0 .713.287Q12 3.575 12 4t-.287.712Q11.425 5 11 5H5v14h6q.425 0 .713.288q.287.287.287.712t-.287.712Q11.425 21 11 21Z"
+                />
+              </svg>
+              Logout
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white p-12 lg:w-full">
+        <h1 class="text-2xl font-bold text-[#1d1948]">Billing</h1>
+        <p class="mt-12 font-bold text-[#1d1948] text-md">Order History</p>
+        <p class="text-[#6b6692] text-sm">
+          Manage billing information and view receipts
+        </p>
+        <div class="flex justify-between mt-12 text-[#6b6692]">
+          <p>Date</p>
+          <p>Type</p>
+          <p>Receipt</p>
+        </div>
+        <div
+          class="flex justify-between items-center text-black p-4 -mx-4 hover:shadow-xl rounded-sm font-bold md:text-sm text-xs"
+        >
+          <p>Oct. 21,2021</p>
+          <p>Pro Annual</p>
+          <button
+            class="border border-gray-200 p-2 rounded-md hover:bg-[#EE4E39] hover:text-white hover:border-0"
+          >
+            Download
+          </button>
+        </div>
+        <div
+          class="flex justify-between items-center text-black p-4 -mx-4 hover:shadow-xl rounded-sm font-bold md:text-sm text-xs"
+        >
+          <p>Aug. 21,2021</p>
+          <p>Pro Portfolio</p>
+          <button
+            class="border border-gray-200 p-2 rounded-md hover:bg-[#EE4E39] hover:text-white hover:border-0"
+          >
+            Download
+          </button>
+        </div>
+        <div
+          class="flex justify-between items-center text-black p-4 -mx-4 hover:shadow-xl rounded-sm font-bold md:text-sm text-xs"
+        >
+          <p>July 21,2021</p>
+          <p>Sponsored Post</p>
+          <button
+            class="border border-gray-200 p-2 rounded-md hover:bg-[#EE4E39] hover:text-white hover:border-0"
+          >
+            Download
+          </button>
+        </div>
+        <div
+          class="flex justify-between items-center text-black p-4 -mx-4 mb-4 hover:shadow-xl rounded-sm font-bold md:text-sm text-xs"
+        >
+          <p>June 21,2021</p>
+          <p>Sponsored Post</p>
+          <button
+            class="border border-gray-200 p-2 rounded-md hover:bg-[#EE4E39] hover:text-white hover:border-0"
+          >
+            Download
+          </button>
+        </div>
+        <a href=" " class="text-[#EE4E39] underline">Load more</a>
+        <p class="mt-20 font-bold text-[#1d1948] text-md">Payment Method</p>
+        <p class="text-[#6b6692] text-sm">
+          Manage billing information and view receipts
+        </p>
+        <div class="flex items-center mt-12">
+          <div class="border p-3 rounded-md">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="16.22"
+              viewBox="0 0 256 83"
+            >
+              <defs>
+                <linearGradient
+                  id="logosVisa0"
+                  x1="45.974%"
+                  x2="54.877%"
+                  y1="-2.006%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stop-color="#222357" />
+                  <stop offset="100%" stop-color="#254AA5" />
+                </linearGradient>
+              </defs>
+              <path
+                fill="url(#logosVisa0)"
+                d="M132.397 56.24c-.146-11.516 10.263-17.942 18.104-21.763c8.056-3.92 10.762-6.434 10.73-9.94c-.06-5.365-6.426-7.733-12.383-7.825c-10.393-.161-16.436 2.806-21.24 5.05l-3.744-17.519c4.82-2.221 13.745-4.158 23-4.243c21.725 0 35.938 10.724 36.015 27.351c.085 21.102-29.188 22.27-28.988 31.702c.069 2.86 2.798 5.912 8.778 6.688c2.96.392 11.131.692 20.395-3.574l3.636 16.95c-4.982 1.814-11.385 3.551-19.357 3.551c-20.448 0-34.83-10.87-34.946-26.428m89.241 24.968c-3.967 0-7.31-2.314-8.802-5.865L181.803 1.245h21.709l4.32 11.939h26.528l2.506-11.939H256l-16.697 79.963h-17.665m3.037-21.601l6.265-30.027h-17.158l10.893 30.027m-118.599 21.6L88.964 1.246h20.687l17.104 79.963h-20.679m-30.603 0L53.941 26.782l-8.71 46.277c-1.022 5.166-5.058 8.149-9.54 8.149H.493L0 78.886c7.226-1.568 15.436-4.097 20.41-6.803c3.044-1.653 3.912-3.098 4.912-7.026L41.819 1.245H63.68l33.516 79.963H75.473"
+                transform="matrix(1 0 0 -1 0 82.668)"
+              />
+            </svg>
+          </div>
+          <p class="ml-2 font-bold text-sm">Visa ending in 2255</p>
+          <button
+            class="ml-auto border border-gray-200 p-2 rounded-md hover:bg-[#EE4E39] hover:text-white hover:border-0 font-bold text-sm"
+          >
+            Remove
+          </button>
+        </div>
+      </div>
+      <div
+        class="bg-white p-8 rounded-b-xl md:rounded-r-xl md:rounded-bl-none md:shadow-b-xl lg:w-fit"
+      >
+        <div class="h-fit md:w-full">
+          <div class="bg-[#EE4E39] text-white p-8 rounded-xl mt-6 md:mt-24">
+            <p class="text-sm mb-4">Your plan</p>
+            <p class="text-lg font-bold">Pro Annual</p>
+            <p class="text-sm mb-4">Renews on Nov.2021</p>
+            <button
+              class="border oultine-white p-2 rounded-xl hover:bg-white hover:text-[#EE4E39] font-bold"
+            >
+              Cancel Subscription
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
