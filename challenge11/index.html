@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Lao:wght@400;500&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html,
+      body {
+        font-family: "Nunito", sans-serif;
+      }
+      .selected {
+        box-shadow: 0 0 10px rgb(198, 65, 98);
+        color: white;
+        border: 1px solid rgb(198, 65, 98);
+      }
+    </style>
+  </head>
+  <body class="flex justify-center bg-[#24252D] m-40">
+    <div class="h-full w-fit bg-[#1D1E26] text-center p-8">
+      <h1 class="text-gray-400 font-bold text-2xl">Browse by interests</h1>
+      <p class="mx-auto text-gray-500 font-light mt-4">
+        Select some interests to help us personalize<br />
+        your experience on Edmondo.
+      </p>
+      <div
+        class="grid grid-rows-3 lg:grid-flow-col my-8 gap-4 text-gray-500"
+        id="interests"
+      >
+        <button
+          class="gridbtn px-6 py-4 bg-[#17181F] rounded hover:bg-opacity-50 hover:border hover:border-[#C64162]"
+        >
+          Math
+        </button>
+        <button
+          class="gridbtn px-6 py-4 bg-[#17181F] rounded hover:bg-opacity-50 hover:border hover:border-[#C64162]"
+        >
+          World Languages
+        </button>
+        <button
+          class="gridbtn px-6 py-4 bg-[#17181F] rounded hover:bg-opacity-50 hover:border hover:border-[#C64162]"
+        >
+          Development
+        </button>
+        <button
+          class="gridbtn px-6 py-4 bg-[#17181F] rounded hover:bg-opacity-50 hover:border hover:border-[#C64162]"
+        >
+          Science
+        </button>
+        <button
+          class="gridbtn px-6 py-4 bg-[#17181F] rounded hover:bg-opacity-50 hover:border hover:border-[#C64162]"
+        >
+          Health and PE
+        </button>
+        <button
+          class="gridbtn px-6 py-4 bg-[#17181F] rounded hover:bg-opacity-50 hover:border hover:border-[#C64162]"
+        >
+          Technology
+        </button>
+        <button
+          class="gridbtn px-6 py-4 bg-[#17181F] rounded hover:bg-opacity-50 hover:border hover:border-[#C64162]"
+        >
+          English
+        </button>
+        <button
+          class="gridbtn px-6 py-4 bg-[#17181F] rounded hover:bg-opacity-50 hover:border hover:border-[#C64162]"
+        >
+          Special Education
+        </button>
+        <button
+          class="gridbtn px-6 py-4 bg-[#17181F] rounded hover:bg-opacity-50 hover:border hover:border-[#C64162]"
+        >
+          Social Studies
+        </button>
+      </div>
+      <div class="flex justify-center mx-auto">
+        <button
+          class="border border-black text-gray-500 px-8 py-4 rounded mr-2 my-4 hover:text-white hover:border hover:border-[#C64162]"
+        >
+          Skip
+        </button>
+        <button
+          class="border border-black text-gray-500 text-white bg- px-8 py-4 bg-[#C64162] rounded ml-2 my-4 hover:bg-[#D5728A]"
+        >
+          Save
+        </button>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
