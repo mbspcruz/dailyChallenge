@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      table {
+        border-collapse: separate;
+        border-spacing: 2px 2px;
+      }
+      th {
+        background-color: #4287f5;
+        color: white;
+      }
+      th,
+      td {
+        width: 150px;
+        text-align: center;
+        border: 1px solid black;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body class="m-40">
+    <div class="bg-[#F0F3FD] w-full h-fit p-20 rounded-md">
+      <div class="flex justify-between">
+        <div class="flex">
+          <span class="mr-2 pt-1">Show</span>
+          <div class="relative inline-block text-left">
+            <div>
+              <button
+                type="button"
+                class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                id="menu-button"
+                aria-expanded="true"
+                aria-haspopup="true"
+              >
+                8
+                <svg
+                  class="-mr-1 h-5 w-5 text-gray-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div
+              class="menu hidden relative right-0 z-10 mt-2 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="menu-button"
+              tabindex="-1"
+            >
+              <div class="py-1" role="none">
+                <a
+                  href="#"
+                  class="text-gray-700 block px-4 py-2 text-sm"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-0"
+                  >10</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-700 block px-4 py-2 text-sm"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-1"
+                  >15</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-700 block px-4 py-2 text-sm"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-2"
+                  >20</a
+                >
+              </div>
+            </div>
+          </div>
+          <span class="ml-2 pt-1">entries</span>
+        </div>
+        <form class="">
+          <label class="relative block w-1/2">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+              <svg
+                class="h-5 w-5 fill-gray-500"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
+                ></path>
+              </svg>
+            </span>
+            <input
+              type="search"
+              class="p-2 rounded-md border border-gray-200 pl-10 w-fit outline-0 focus:border focus:border-2 focus:border-gray-300"
+              placeholder="Search"
+            />
+          </label>
+        </form>
+      </div>
+      <table class="">
+        <tr>
+          <th>
+            <div class="flex text-gray-500 font-semibold">
+              First Name
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#4666d5"
+                  d="M6.7 14.7q-.275-.275-.275-.7t.275-.7l4.6-4.6q.15-.15.325-.212T12 8.425q.2 0 .388.075t.312.2l4.6 4.6q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275L12 10.8l-3.9 3.9q-.275.275-.7.275t-.7-.275Z"
+                />
+              </svg>
+            </div>
+          </th>
+
+          <th>
+            <div class="flex text-gray-500 font-semibold">
+              Last Name
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#acb4bd"
+                  d="M12 14.975q-.2 0-.388-.075t-.312-.2l-4.6-4.6q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275t.7.275q.275.275.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062Z"
+                />
+              </svg>
+            </div>
+          </th>
+          <th>
+            <div class="flex text-gray-500 font-semibold">
+              Email
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#acb4bd"
+                  d="M12 14.975q-.2 0-.388-.075t-.312-.2l-4.6-4.6q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275t.7.275q.275.275.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062Z"
+                />
+              </svg>
+            </div>
+          </th>
+          <th>
+            <div class="flex text-gray-500 font-semibold">
+              Created at
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#acb4bd"
+                  d="M12 14.975q-.2 0-.388-.075t-.312-.2l-4.6-4.6q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275t.7.275q.275.275.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062Z"
+                />
+              </svg>
+            </div>
+          </th>
+        </tr>
+
+        <tr class="td">
+          <td>Hwllo</td>
+          <td>How are yoi</td>
+        </tr>
+        <tr class="td">
+          <td>Hwllo</td>
+          <td>How are yoi</td>
+        </tr>
+      </table>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
